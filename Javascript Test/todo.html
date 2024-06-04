@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>TODO APPLICATION | DASHBOARD</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <div class="hLeft">
+                    <h2>TODO LIST</h2>
+                </div>
+                <div class="hRight">
+                    <span><strong id="profile" style="margin-right: 10px;"></strong></span>
+                    <a href="login.html" class="signin-btn">LOGIN</a>
+                    <a href="register.html" class="register-btn">REGISTER</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main">
+            <h1 style="margin-bottom: 10px;"><span class="color">MY TODO LIST</span></h1>
+            <div id="inputs">
+                <div>
+                    <label for="title">TITLE:</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div>
+                    <label for="description">DESCRIPTION:</label>
+                    <input type="text" name="description" id="description">
+                </div>
+                <div>
+                    <label for="date">DATE:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+            </div>
+
+            <div>
+                <button class="crud" id="create-btn" onclick="handleInsert()">CREATE</button>
+                <button class="crud" id="read-btn" onclick="handleRead()">READ</button>
+                <button class="crud" id="update-btn" onclick="handleUpdate()">UPDATE</button>
+                <button class="crud" id="delete-btn" onclick="handleDelete()">DELETE</button>
+            </div>
+
+            <div id="todo-display">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer">&copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>

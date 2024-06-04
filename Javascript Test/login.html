@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <main>
+        <div class="register_main">
+            <div class="wrapper">
+                <h1 style="text-align: center; color: lightseagreen;">LOGIN</h1>
+                <div>
+                    <label for="email">EMAIL:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="password">PASSWORD:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button id="login-btn" onclick="handleLogin()">LOGIN</button>
+                <div>
+                    <p>Don't have an account? <a href="register.html" style="color: lightseagreen;">Regiter here</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
